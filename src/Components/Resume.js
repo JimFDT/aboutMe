@@ -1,34 +1,30 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class Resume extends Component {
   render() {
     if (this.props.data) {
-      var data = this.props.data
-      // let jsonData = this.props.data
-      // console.log('jsonData:: ', jsonData)
-      // let work = JSON.stringify(jsonData.work[1])
-      // console.log('work ', work)
-      var school1 = this.props.data.education[0].school;
-      var school2 = this.props.data.education[1].school;
-      var degree1 = this.props.data.education[0].degree;
-      var degree2 = this.props.data.education[1].degree;
-      var graduated1 = this.props.data.education[0].graduated;
-      var graduated2 = this.props.data.education[1].graduated;
-      var company1 = this.props.data.work[0].company;
-      var company2 = this.props.data.work[1].company;
-      var title1 = this.props.data.work[0].title;
-      var title2 = this.props.data.work[1].title;
-      var years1 = this.props.data.work[0].years;
-      var years2 = this.props.data.work[1].years;
-      var description1 = this.props.data.work[0].description;
-      var description2 = this.props.data.work[1].description
+      const data = this.props.data
+      var school1 = data.education[0].school,
+       school2 = data.education[1].school,
+       degree1 = data.education[0].degree,
+       degree2 = data.education[1].degree,
+       graduated1 = data.education[0].graduated,
+       graduated2 = data.education[1].graduated,
+       company1 = data.work[0].company,
+       company2 = data.work[1].company,
+       title1 = data.work[0].title,
+       title2 = data.work[1].title,
+       years1 = data.work[0].years,
+       years2 = data.work[1].years,
+       description1 = data.work[0].description,
+       description2 = data.work[1].description,
+       name1 = data.skills[0].name,
+       name2 = data.skills[1].name,
+       name3 = data.skills[2].name,
+       name4 = data.skills[3].name,
+       name5 = data.skills[4].name,
+       name6 = data.skills[5].name
       // var description2 = work.description.replace('<br/>', '\n')
-      var name1 = this.props.data.skills[0].name;
-      var name2 = this.props.data.skills[1].name;
-      var name3 = this.props.data.skills[2].name;
-      var name4 = this.props.data.skills[3].name;
-      var name5 = this.props.data.skills[4].name;
-      var name6 = this.props.data.skills[5].name;
     }
 
     return (

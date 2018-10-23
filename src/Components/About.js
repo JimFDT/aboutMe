@@ -3,11 +3,7 @@ import React, {Component} from 'react';
 class About extends Component {
   render() {
     if (this.props.data) {
-      let data = this.props.data
-      var name = data.name;
-      var occupation = data.occupation;
-      var email = data.email;
-      var phone = data.phone;
+      var {name, occupation, email, phone} = this.props.data
     }
 
     return (
@@ -23,7 +19,6 @@ class About extends Component {
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
                 <p className="address">
-                  {/*<span>{name}</span><br/>*/}
                   <span>{name}</span><br/>
                   <span>{phone}</span><br/>
                   <span>{email}</span>
@@ -31,7 +26,7 @@ class About extends Component {
               </div>
               <div className="columns download">
                 <p>
-                  <a href="#" className="button"><i className="fa fa-download"></i>Download Resume</a>
+                  <a href="https://www.cakeresume.com/resumes/Jim_Wu/draft?print=true" className="button"><i className="fa fa-download"></i>Download Resume</a>
                 </p>
               </div>
             </div>

@@ -12,7 +12,6 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      foo: 'bbb',
       resumeData: {}
     }
   }
@@ -36,14 +35,10 @@ class App extends Component {
     this.getResumeData()
   }
 
-
   render() {
-    console.log('HIII:', this.state.resumeData)
-    let resumeData = this.state.resumeData.resume
-    console.log('resumeData:: ', resumeData)
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
+        <Header data={this.state.resumeData.social}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio/>
